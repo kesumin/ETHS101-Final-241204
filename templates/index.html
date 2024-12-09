@@ -174,7 +174,7 @@
                 const roleDiv = document.createElement("div");
                 roleDiv.classList.add("message-role");
                 if (msg.role === "user") {
-                  roleDiv.classList.add("user");
+                  roleDiv.classList.add("Class");
                 }
                 roleDiv.textContent =
                   msg.role.charAt(0).toUpperCase() + msg.role.slice(1);
@@ -299,7 +299,7 @@
               if (data.success) {
                 const roleDiv = document.createElement("div");
                 roleDiv.classList.add("message-role");
-                roleDiv.classList.add("assistant");
+                roleDiv.classList.add("Assistant");
 
                 roleDiv.textContent = "Maria Jackson";
                 chatContainer.appendChild(roleDiv);
@@ -327,7 +327,7 @@
           // Create a typing indicator
           const typingIndicator = document.createElement("div");
           typingIndicator.classList.add("typing-indicator");
-          typingIndicator.textContent = "•••";
+          typingIndicator.textContent = "•";
 
           // Append the typing indicator to its container
           typingIndicatorContainer.appendChild(typingIndicator);
