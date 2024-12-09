@@ -54,9 +54,8 @@ h3 {
   max-width: 100vw;
   width: 85%;
   height: 100vh;
-  margin: auto auto;
-  padding: 4% 2%; /* General padding for chat container */
-  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -96,7 +95,7 @@ h3 {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  padding-top: 1%;
+  padding-top: 10px;
 }
 
 .message-input-container form {
@@ -289,6 +288,7 @@ input[type="text"] {
   font-size: 15px;
   font-weight: bold;
   color: #000000;
+  width: 200px;
 }
 
 .message-role {
@@ -331,6 +331,7 @@ input[type="text"] {
   justify-content: space-around; /* Adjust content distribution */
   align-items: center; /* Center content horizontally */
   padding: 20px;
+  margin-right: 10px;
   box-sizing: border-box;
   border-right: 1px solid #48484d; /* Optional: border to separate from the chat section */
   background-color: #3a3a41; /* gray background */
@@ -348,33 +349,10 @@ input[type="text"] {
   width: 100%; /* Ensure the div takes up the full width */
 }
 
-.file-upload-btn,
-.file-upload-input + label {
-  margin-top: auto; /* Push the button to the bottom */
-  width: calc(
-    100% - 40px
-  ); /* Adjust width to ensure it fits within the parent's padding */
-  padding: 4px 8px;
-  cursor: pointer;
-  background-color: #3718F0;
-  color: white;
-  border: none;
-  max-height: 32px;
-  border-radius: 8px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
 /* Clear floats */
 body::after {
   content: none;
 }
-
-.file-upload-section,
-.chat-container {
-  float: none;
-}
-
 .main-content {
   display: flex;
   flex-direction: row; /* Align children (file upload section and chat container) horizontally */
@@ -387,40 +365,12 @@ body::after {
   flex-grow: 1; /* Allow it to take up remaining space in the container */
   overflow-y: auto; /* Enable vertical scrolling */
   padding-right: 30px; /* Add padding to give space to the scrollbar */
-  max-height: calc(100vh - 120px); /* Customize based on the size of input container */
   display: flex;
   flex-direction: column;
 }
 
 .hidden {
   display: none;
-}
-
-#filesList {
-  width: 100%;
-}
-
-.file-entry {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Vertically center the items */
-  gap: 10px; /* Add some space between the icon and the text */
-  padding-bottom: 15px;
-}
-
-.file-entry div {
-  display: flex;
-  align-items: center;
-}
-
-.file-entry span {
-  flex-grow: 1; /* Allows the file ID to take up any available space */
-  margin: 0 10px; /* Adds some spacing around the file ID */
-}
-
-#filesDivider {
-  border-top: 1px solid #ececf1; /* Sets the color and height of the divider */
-  width: 100%; /* Ensures the divider stretches across the full width of its container */
 }
 
 *::-webkit-scrollbar {
